@@ -18,3 +18,19 @@
      网络模型（更新中）
      缩写-英文-中文（更新中）
 前端-持续更新中，还没有那个板块基本更新完（更新中）
+
+## 参数记录
+
+### 图床参数
+
+- 数据结构/排序
+
+  /datastructure/sortAlgorithm
+
+- 计网/网络模型
+
+  /computerNetworks/networkModel
+
+- 计网/计网概念
+
+  /computerNetworks/basicConception
