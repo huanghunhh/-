@@ -38,3 +38,12 @@
 - 数据库/关系模型
 
   /database/relationalModel
+
+## 博客参考
+
+[Typora-Markdown 语法手册](https://www.jianshu.com/p/8522255344ac)
+
+[数学公式：Axmath 与 LaTeX 语法](https://www.jianshu.com/p/2be11057dc5c)
+
+
+
