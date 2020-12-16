@@ -51,7 +51,3 @@
 
 
 
-*[digital](javascript:;) [transmission](javascript:;)*
-
-
-
