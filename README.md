@@ -43,6 +43,12 @@
 
   /computerNetworks/digitalTransmission
 
+- 离散数学/命题
+
+  /discreteMathematics/proposition
+
+  
+
 ## 博客参考
 
 [Typora-Markdown 语法手册](https://www.jianshu.com/p/8522255344ac)
