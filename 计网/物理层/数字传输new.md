@@ -28,8 +28,10 @@
   
   + NRZ-I
   
-    信号电平是否反相转或跳变决定了位值
+    Invert - 反转
   
+    信号电平是否反相转或跳变决定了位值
+    
     没有跳变-0，有跳变-1
 
 ### 曼切斯特与差分曼切斯特
@@ -89,6 +91,10 @@ $$
 
 ![8B6T编码](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/digitalTransmission/20201215200319.png)
 
+- 冗余的信号元素
+
+  提供同步和差错检测，DC平衡
+
 ### 多电平：4D-PAM5
 
 ![4D-PAM5方案](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/digitalTransmission/20201215165426.png)
@@ -123,9 +129,17 @@ $$
 
 ![块编码概念图](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/digitalTransmission/20201216122939.png)
 
+把m位的块变成n位的块（n>m），称为mB/nB编码技术（/用以区别多电平编码）
+
+增加了比特率（数据发送的位数变多）
+
 ### 4B/5B
 
+与NRZ-I组合使用
+
 ### 8B/10B
+
+是5B/6B编码和3B/4B编码的组合
 
 ## 扰动
 
@@ -133,6 +147,12 @@ $$
 
 ![B8ZS扰动技术](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/digitalTransmission/20201216170604.png)
 
+- 图片解读
+
+  8个连续的0电平会被替换为000VB0VB（V-与前一个非零脉冲极性相同的极性，B-与前一个非零脉冲极性相反的极性）
+
 ### HDB3
 
 ![HDB3扰动技术](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/digitalTransmission/20201216171136.png)
+
+4个连续零电平被置换成000V或B00V，使非零脉冲总数为偶数——如果最后一次置换后的非零脉冲是奇数-置换模式为000V，如果最后一次置换后的非零脉冲是偶数-置换模式为B00V
