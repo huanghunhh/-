@@ -35,18 +35,22 @@
 
   /computerNetworks/basicConception
 
-- 数据库/关系模型
+- 计网/数据和信号
 
-  /database/relationalModel
+  /computerNetworks/dataAndSignals
 
 - 计网/数字传输
 
   /computerNetworks/digitalTransmission
 
-- 计网/数据和信号
+- 计网/模拟传输
 
-  /computerNetworks/dataAndSignals
+  /computerNetworks/analogueTransmission
 
+- 数据库/关系模型
+
+  /database/relationalModel
+  
 - 离散数学/命题
 
   /discreteMathematics/proposition
