@@ -43,6 +43,10 @@
 
   /computerNetworks/digitalTransmission
 
+- 计网/数据和信号
+
+  /computerNetworks/dataAndSignals
+
 - 离散数学/命题
 
   /discreteMathematics/proposition
@@ -54,6 +58,16 @@
 [Typora-Markdown 语法手册](https://www.jianshu.com/p/8522255344ac)
 
 [数学公式：Axmath 与 LaTeX 语法](https://www.jianshu.com/p/2be11057dc5c)
+
+## 公式
+
+|   公式    | 含义 |
+| :-------: | :--: |
+|   \quad   | 空格 |
+| \frac{}{} | 相比 |
+|           |      |
+
+
 
 
 
