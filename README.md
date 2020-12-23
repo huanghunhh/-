@@ -47,6 +47,14 @@
 
   /computerNetworks/analogueTransmission
 
+- 计网/带宽利用
+
+  /computerNetworks/bandwidthUtilization
+  
+- 计网/传输介质
+
+  /computerNetworks/transmissionMedium
+
 - 数据库/关系模型
 
   /database/relationalModel
