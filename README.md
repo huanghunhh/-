@@ -75,6 +75,14 @@
 
   /computerNetworks/Ethernet
 
+- 计网/逻辑寻址
+
+  /computerNetworks/logicalAddressing
+
+- 计网/网络层
+
+  /computerNetworks/networkLayer
+
 - 数据库/关系模型
 
   /database/relationalModel
