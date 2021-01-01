@@ -91,6 +91,10 @@
 
   /discreteMathematics/proposition
 
+- 离散数学/集合
+
+  /discreteMathematics/setAndRelation
+
 - 离散数学/图论
 
   /discreteMathematics/graphTheory
