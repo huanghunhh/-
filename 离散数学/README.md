@@ -13,7 +13,7 @@
 |   \Rightarrow    |   $\Rightarrow$    |
 |     \forall      |     $\forall$      |
 |     \exists      |     $\exists$      |
-|     ∧∨¬→∉∈⊆⊕     |                    |
+|    ∧∨¬→∉∈⊆⊕×∞    |                    |
 |   \subset \sub   |   $\subset \sub$   |
 | \subseteq \sube  | $\subseteq \sube$  |
 |     \supset      |     $\supset$      |
@@ -23,5 +23,6 @@
 |   \cap \bigcap   |   $\cap \bigcap$   |
 |     \otimes      |     $\otimes$      |
 |      \oplus      |      $\oplus$      |
+|      \times      |      $\times$      |
 |  $\vee \bigvee$  |                    |
 
