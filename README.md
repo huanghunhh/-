@@ -1,5 +1,9 @@
 # 计算机知识点笔记整理
 
+## 暂存
+
+![image-20210103181029060](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/transportLayer/image-20210103181029060.png)
+
 ## 关于
 
 完成各种有关计算机知识点的笔记整理，包括但不限于
@@ -82,6 +86,10 @@
 - 计网/网络层
 
   /computerNetworks/networkLayer
+
+- 计网/传输层
+
+  /computerNetworks/transportLayer
 
 - 数据库/关系模型
 
