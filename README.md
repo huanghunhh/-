@@ -95,6 +95,10 @@
 
   /discreteMathematics/setAndRelation
 
+- 离散数学/函数与无限集合
+
+  /discreteMathematics/functionsAndInfiniteSet
+
 - 离散数学/图论
 
   /discreteMathematics/graphTheory
