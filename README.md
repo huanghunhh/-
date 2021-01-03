@@ -2,7 +2,7 @@
 
 ## 暂存
 
-![image-20210103181029060](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/computerNetworks/transportLayer/image-20210103181029060.png)
+
 
 ## 关于
 
