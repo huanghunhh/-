@@ -31,6 +31,10 @@
 
   /datastructure/sortAlgorithm
 
+- 数据结构/all
+
+  /datastructure/all
+
 - 计网/网络模型
 
   /computerNetworks/networkModel
