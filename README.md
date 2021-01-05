@@ -107,6 +107,10 @@
 
   /database/relationalLanguage
 
+- 数据库/关系数据库理论
+
+  /database/relationalDatabaseTheory
+
 - 离散数学/命题
 
   /discreteMathematics/proposition
