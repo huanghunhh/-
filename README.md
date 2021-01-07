@@ -127,6 +127,10 @@
 
   /discreteMathematics/graphTheory
 
+- 软件工程/all
+
+  softwareEngineering/all
+
 - 杂乱的存储
 
   /clutter
