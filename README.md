@@ -135,9 +135,15 @@
 
   softwareEngineering/all
 
+- git
+
+  /git
+
 - 杂乱的存储
 
   /clutter
+
+- lsy/软件每日花费
 
 
 
