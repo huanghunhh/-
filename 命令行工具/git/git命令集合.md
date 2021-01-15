@@ -79,7 +79,6 @@ git branch --no-merged # 查看没有合并到当前分支的分支列表，一�
 
 
 
-
 # 栈操作命令
 git stash list # 查看栈中的存储
 git stash # 将未完成的修改保存到一个栈上，之后可以在任何时候重新应用这些改动-一般不要在栈中保存太多
@@ -162,7 +161,7 @@ git merge <远程跟踪分支> # 将远程跟踪分支合并到当前分支
 git branch -u <远程跟踪分支> # 将当前分支与远程跟踪分支绑定，建立一一对应关系
 git branch -vv # 查看远程分支
 
-git checkout --track <远程跟踪分支> # 
+git checkout --track <远程跟踪分支> # 把远程分支拿到本地，并建立关联
 
 git pull # 建立对应关系后，可以直接拉取
 
@@ -171,7 +170,7 @@ git remote prune origin --dry-run # 列出仍在远程跟踪但是远程已被�
 git remote prune origin # 清除上面命令列出来的远程跟踪
 
 # 分支命令
-git branch # 查看所有本地分支
+git branch [-l] # 查看所有本地分支
 git branch -a # 查看所有本地分支和远程分支
 git branch -r # 查看所有远程分支
 
@@ -231,13 +230,42 @@ vim [.txt] # 编辑文件（通过vim-又是一个大课）
 
 ## 命令组合拳
 
-```shell
-# 对一个文件进行简单的版本控制
-(echo "test" | git hash-object -w --stdin)
-echo "test" > test.txt # 向文件中输入内容
-git hash-object -w test.txt # 存储文件并返回对应的hash值
-find .git/object -type f # 查看目录下的文件
-git cat-file -p [hash值] # 查看hash值对应的文件内容
-git cat-file -t [hash值] # 查看hash值对应的文件类型
-```
+- 底层命令
 
+  ```shell
+  # 对一个文件进行简单的版本控制
+  (echo "test" | git hash-object -w --stdin)
+  echo "test" > test.txt # 向文件中输入内容
+  git hash-object -w test.txt # 存储文件并返回对应的hash值
+  find .git/object -type f # 查看目录下的文件
+  git cat-file -p [hash值] # 查看hash值对应的文件内容
+  git cat-file -t [hash值] # 查看hash值对应的文件类型
+  ```
+
+- 高层命令
+
+  ```shell
+  # 使用步骤
+  git init # git仓库初始化
+  git remote -v # 查看远程仓库
+  git remote add <远程仓库别名> <远程仓库url> # 给远程仓库添加别名
+  git remote -v # 查看远程仓库
+  git branch -vv # 查看远程分支
+  [编辑]
+  git st # 查看工作目录状态
+  git add . # 添加
+  git commit # 提交
+  git config --global user.name "<邮箱号>" # 配置姓名
+  git config --global user.email "<邮箱号>" # 配置邮箱
+  git push <远程仓库别名> <分支名> # 推送，生成相应的远程分支和远程跟踪分支
+  # 删除window凭据
+  
+  
+  git clone <远程仓库url> # 克隆到本地
+  
+  git fetch origin # 从远程分支获取最新版本到本地
+  git cot --track <远程跟踪分支名> # 把远程分支拿到本地，并建立关联（当前没有分支）
+  git branch -u <远程跟踪分支名> # 将当前分支与远程跟踪分支绑定，建立一一对应关系（当前有分支）
+  ```
+
+  
