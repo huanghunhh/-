@@ -2,7 +2,9 @@
 
 ## 暂存
 
+![image-20210115154511811](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/git/20210115154524.png)
 
+![image-20210115154549](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/git/20210115154549.png)
 
 ## 关于
 
@@ -26,6 +28,14 @@
 ## 参数记录
 
 ### 图床参数
+
+- /前端/css
+
+- /前端/html
+
+- /lsy/软件每日花费
+
+- /AcWing/算法基础课
 
 - 数据结构/排序
 
