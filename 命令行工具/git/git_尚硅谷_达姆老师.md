@@ -52,6 +52,10 @@
 
   ![image-20210111121900459](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/git/20210111121901.png)
 
+### 一些问题
+
+[Git Bash 终端中文输出显示乱码解决方案](https://blog.csdn.net/weixin_44256848/article/details/88716176)
+
 ### git 初始化
 
 #### git 命令
@@ -697,6 +701,20 @@ git config --global user.email [email] # 配置邮箱
 - git 远程协议时会产生冲突
 
   进行相应修改
+
+### git push 每次都要登陆的问题
+
+[Git Push 避免用户名和密码方法](https://blog.csdn.net/weixin_30502965/article/details/95913257)
+
+[windows 上解决 git 每次重复输入账号密码](https://blog.csdn.net/shenxingyu567/article/details/73733544)
+
+[windows 下 git 如何避免每次 push 都要输入用户名和密码](https://blog.csdn.net/alfredseng/article/details/68061260)
+
+基本都是实现下面的效果
+
+![image-20210115154549](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/git/20210115154549.png)
+
+![image-20210115154511811](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/git/20210115154524.png)
 
 ### 远程协作
 

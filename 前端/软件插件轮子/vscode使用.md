@@ -1,0 +1,59 @@
+# vscode 使用
+
+## 创建用户代码片段
+
+[官方：emmet在github上的代码](https://github.com/emmetio/emmet)
+
+[官方：emmet在VSCode上的说明文档](https://code.visualstudio.com/docs/editor/emmet)
+
+[官方：emmet的官方文档](https://docs.emmet.io/)
+
+- 默认的用户代码片段（Snippets）
+
+  ![image-20210123110304145](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123110306.png)
+
+  上述定义的全局用户代码片段，就定义在此处
+
+  ![image-20210123112848467](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123112850.png)
+
+- 自定义Snippets
+
+  [vscode snippets 配置快速代码模板](https://blog.csdn.net/qq_31331027/article/details/84635553)
+
+  [VSCode 设置 Snippets 代码块](https://blog.csdn.net/ArtinCode/article/details/102961785)
+  
+  [vscode 设置代码模板，变量值 —— 自动生成文件名、作者、创建日期等信息](https://blog.csdn.net/weixin_44901175/article/details/107617912)
+  
+  ![image-20210123122040809](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123122042.png)
+  
+  在 VSCode 中好像定义了各种 Snippets 片段，但没有 html、css的，还是应该在 emmet 中
+  
+- Emmet语法
+
+  + VScode 内置了 Emmet 语法，想修改默认的 Emmet 模板（以前可以，但好像现在不行了）
+
+    ![image-20210123111834628](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123111835.png)
+
+    [修改 VS Code (即 emmet 语法) 自动生成的 HTML 模板](https://www.jianshu.com/p/4effad66eccc)
+
+    [修改 VSCode 中感叹号回车自动生成的 HTML 模板](https://blog.csdn.net/qq_42123832/article/details/107492506)
+
+  + 但可以自定义emmet的snipptes
+  
+    [VSCode 中 Emmet 修改默认 html 或 css 模板 snippets](https://blog.csdn.net/weixin_42655717/article/details/112533401) - 可行
+  
+    [VS Code 中自定义 Emmet 代码片段](https://blog.csdn.net/zjthorse/article/details/83048869)
+
+    定义 emmet 的 snippets
+
+    ![image-20210123132426822](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123132429.png)
+
+    覆盖默认的 snippets
+  
+    ![image-20210123133423933](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123133425.png)
+
+## 关闭 vscode 烦人的提示框
+
+[关闭 vscode 烦人的提示框](https://blog.csdn.net/liuyuemozhu/article/details/101056556)
+
+![image-20210123112453285](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123112454.png)

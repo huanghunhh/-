@@ -171,8 +171,8 @@ git remote prune origin # 清除上面命令列出来的远程跟踪
 
 # 分支命令
 git branch [-l] # 查看所有本地分支
-git branch -a # 查看所有本地分支和远程分支
-git branch -r # 查看所有远程分支
+git branch -a # 查看所有本地分支和远程跟踪分支（？还是远程分支）
+git branch -r # 查看所有远程跟踪分支（？还是远程分支）
 
 
 # 底层命令

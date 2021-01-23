@@ -573,12 +573,12 @@ right - 不允许右侧有浮动元素
   + 双伪元素
   
     ```css
-    .clearfix:before,
-    .clearfix:after {
+    .clearfix::before,
+    .clearfix::after {
       content: "";
       display: table;
     }
-    .clearfix:after {
+    .clearfix::after {
       clear: both;
     }
     .clearfix { /* IE6、7专有，为了兼容性 */

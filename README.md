@@ -29,6 +29,8 @@
 
 ### 图床参数
 
+- /软件插件轮子/all
+
 - /前端/css
 
 - /前端/html
@@ -381,8 +383,8 @@
 规范化 20分
 数据库设计 15分
 
-![image-20201224102223083](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/clutter/20201224102709.png)
-![](F:\西电软工二学位\第一学期\数据库\划重点.png)
+![文件太大，根据网址去浏览器上看](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/clutter/20201224102709.png)
+![](F:\西电软工二学位\各学期课程\第1学期\数据库\划重点.png)
 
 
 

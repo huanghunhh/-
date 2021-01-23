@@ -205,7 +205,7 @@
 
   ![image-20210118094150742](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/css/20210118094152.png)
 
-### 防止拖拽文本域
+### 防止拖拽文本域 resize
 
 - 代码
 
@@ -387,7 +387,7 @@
 
   ![image-20210118121219842](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/css/20210118121221.png)
 
-## CSS3 过渡
+## CSS3 过渡 transition
 
 - 简介
 
