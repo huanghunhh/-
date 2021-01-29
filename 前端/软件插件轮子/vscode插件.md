@@ -83,3 +83,7 @@ px 转换为 rem
 ![image-20210122162139384](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/css/20210122162140.png)
 
 Vue相关，对 Vue 的语法进行高亮，智能感知
+
+## Add jsdoc comments
+
+[js 笔记十:vscode 代码提示](https://blog.csdn.net/zdhsoft/article/details/79305847)

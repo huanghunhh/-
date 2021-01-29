@@ -16,6 +16,14 @@
 
   ![image-20210123112848467](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123112850.png)
 
+  ![image-20210125201928496](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210125201930.png)
+
+  在 javascript.json 的用户代码片段中 定义 log
+
+  ![image-20210125202001105](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210125202002.png)
+
+  但 VSCode 中好像在 JavaScript 语言基础功能中定义了 log，不知道
+
 - 自定义Snippets
 
   [vscode snippets 配置快速代码模板](https://blog.csdn.net/qq_31331027/article/details/84635553)
@@ -51,9 +59,19 @@
     覆盖默认的 snippets
   
     ![image-20210123133423933](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123133425.png)
+    
+    定义完后，使用 emmet 语法，可能需要加载一会，如：`!+Tab` 可能是产生默认的代码，等几秒后，`!+Tab` 就是产生新定义的代码了
 
 ## 关闭 vscode 烦人的提示框
 
 [关闭 vscode 烦人的提示框](https://blog.csdn.net/liuyuemozhu/article/details/101056556)
 
 ![image-20210123112453285](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210123112454.png)
+
+这个在编写 ts 代码时，就是显示鼠标悬停提示信息的，控制的开关吧
+
+## 文件夹折叠问题
+
+[vscode 下级文件夹与上级文件夹并列，文件夹折叠问题解决](https://blog.csdn.net/weixin_42162265/article/details/106207676)
+
+![image-20210127141157508](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210127141221.png)
