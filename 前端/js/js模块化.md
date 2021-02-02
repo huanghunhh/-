@@ -132,7 +132,7 @@ IIFE : immediately-invoked function expression(立即调用函数表达式)
 
 ![image-20210126114705841](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/js/js模块化/20210126114707.png)
 
-### commonjs-浏览器
+### commonjs-浏览器-Browserify
 
 ![image-20210126114936883](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/js/js模块化/20210126114938.png)
 
