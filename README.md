@@ -36,6 +36,12 @@ LESS
 
 - /软件插件轮子/all
 
+- 随手记/all
+
+- /前端/vue
+
+- /前端/js
+
 - /前端/js/js模块化
 
 - /前端/js/TS基础
@@ -163,6 +169,10 @@ LESS
 - git
 
   /git
+
+- PicGo
+
+  /PicGo/all
 
 - 杂乱的存储
 

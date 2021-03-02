@@ -644,6 +644,12 @@ module.exports = {
 }
 ```
 
+## 配置文件的整理
+
+(vue/webpack-vue章节)
+
+![image-20210207134647257](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/vue/20210207134649.png)
+
 ## webpack 性能优化
 
 - 开发环境性能优化
