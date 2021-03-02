@@ -26,7 +26,7 @@
 
 - 为什么要模块化
 
-  ![image-20210125195247354](C:\Users\tzygl\AppData\Roaming\Typora\typora-user-images\image-20210125195247354.png)
+  ![image-20210302172620343](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/js/js模块化/20210302172646.png)
 
 - 模块化的好处
 
@@ -122,9 +122,9 @@ IIFE : immediately-invoked function expression(立即调用函数表达式)
 
 ### commonjs-node
 
-![image-20210126112525687](C:\Users\tzygl\AppData\Roaming\Typora\typora-user-images\image-20210126112525687.png)
+![image-20210126112525687](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/js/js模块化/20210302135326.png)
 
-![image-20210126112530446](C:\Users\tzygl\AppData\Roaming\Typora\typora-user-images\image-20210126112530446.png)
+![image-20210126112530446](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/js/js模块化/20210302135335.png)
 
 ![image-20210126112954919](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/js/js模块化/20210126112956.png)
 

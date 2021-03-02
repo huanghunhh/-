@@ -46,10 +46,6 @@ tag 0-孩子 1-前驱或后继
 
 - 示例
 
-  ![IMG_20210104_084723_1](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/datastructure/all/20210104085526.jpg)
-  
-  
-  
   ![image-20210104085800294](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/datastructure/all/20210104085839.png)
 
 ### 插入结点
