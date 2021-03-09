@@ -36,7 +36,9 @@ LESS
 
 - /软件插件轮子/all
 
-- 随手记/all
+- /相关工具/sublime
+
+- /随手记/all
 
 - /前端/vue
 

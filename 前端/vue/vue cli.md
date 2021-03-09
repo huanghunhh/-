@@ -50,7 +50,7 @@
 
   ![image-20210207233909991](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/vue/20210216143003.png)
 
-- 使用服务器访问的三种方式
+- 创建服务器访问文件的三种方式
 
   ![image-20210207224230748](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/vue/20210207224232.png)
   
