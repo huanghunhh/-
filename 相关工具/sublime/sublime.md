@@ -37,3 +37,22 @@
 
 [package control: install 提示 There Are No Packages Available For Installation](https://blog.csdn.net/Burgess_Lee/article/details/73848369)
 
+## 设置快捷键
+
+为自动换行设置快捷键 ALT + z
+
+![image-20210309211052601](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/相关工具/sublime/image-20210309211052601.png)
+
+```json
+[
+	{
+		"keys": ["Alt+z"],
+		"command": "toggle_setting",
+		"args":
+		{
+			"setting": "word_wrap"
+		}
+	}
+]
+```
+

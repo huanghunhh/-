@@ -108,3 +108,17 @@ Symbol.iterator
 
 ### 生成器
 
+## Promise
+
+## 集合 Set
+
+## Map
+
+## class
+
+## 对象方法
+
+## 正则扩展
+
+## BigInt 类型
+

@@ -75,3 +75,17 @@
 [vscode 下级文件夹与上级文件夹并列，文件夹折叠问题解决](https://blog.csdn.net/weixin_42162265/article/details/106207676)
 
 ![image-20210127141157508](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/软件插件轮子/all/20210127141221.png)
+
+## 多行操作
+
+```js
+ALT + 左键 // 选择多个编辑位点
+ALT + Shift // 竖列选择
+
+// 选择多个编辑位点后
+←/→ // 光标移动一个字符
+CTRL + ←/→ // 光标移动一个单词
+SHIFT + ←/→ // 光标选择一个字符
+CTRL + SHIFT + ←/→ // 光标选择一个单词
+```
+
