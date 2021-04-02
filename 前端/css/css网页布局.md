@@ -224,7 +224,54 @@
     
     ![image-20210116201524413](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/css/20210116201525.png)
 
-### 盒子模型 box-sizing
+### 盒子模型
+
+#### 三种盒模型
+
+[三种盒模型详解](https://blog.csdn.net/weixin_44368963/article/details/108317468)
+
+- 标准盒模型
+
+  又称 w3c 盒模型
+
+  width/height 不包含 border 和 padding
+
+  元素的实际大小为width/height + border + padding
+
+  ```css
+  box-sizing: content-box; 
+  /*
+  content-box 盒子的默认计算方法
+  盒子大小=width+padding+border
+  */
+  ```
+
+- 怪异盒模型
+
+  IE 盒模型
+
+  width/height包含了 border 和 padding（padding 和border 侵占宽高）
+
+  元素实际大小即为定义的width/height
+
+  ```css
+  box-sizing: border-box; 
+  /*
+  border-box 
+  盒子大小=width，padding和border侵占width的大小
+  盒子的大小，直接看 width height
+  */
+  ```
+
+- 弹性盒模型
+
+  flexbox
+
+  ```css
+  display: flex;
+  ```
+
+#### box-sizing
 
 - 简介
 
@@ -260,6 +307,8 @@
   ```
 
   ![image-20210118155806780](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/html/20210118155808.png)
+  
+  
 
 ### CSS3 新增属性
 

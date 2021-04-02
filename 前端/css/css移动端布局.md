@@ -421,6 +421,28 @@ img {
 
 #### flex 属性
 
+```css
+/*
+flex: none | flex-grow flex-shrink flex-basis
+none - 0 0 auto
+flex-grow - 指定扩展比率，即剩余空间是正值时，此 flex子项 相对于 flex容器 里其他 flex子项 能分配到的空间的比例。默认为 1
+flex-shrink - 指定收缩比率，即剩余空间是负值时，此 flex子项 相对于 flex容器 里其他 flex子项 能收缩的空间比例，在收缩时，收缩比率会以伸缩基准值加权，默认值为 1
+flex-basis - 指定伸缩基准值，即在根据伸缩比率计算出剩余空间的分布之前， flex子项 长度的起始数值，默认为 0%，auto-生说哦基准值的计算值是自身的 width 设置，如果自身宽度没有定义，则长度取决于内容
+
+剩余空间 = 父盒子空间 - 各个子盒子的基准值
+再根据剩余空间的正负，选择 flex-grow 计算扩展比率，或选择 flex-shrink 计算收缩比率
+
+复合属性
+flex: 1; // 1 1 0%
+flex: auto; // 1 1 auto
+flex: none; // 0 0 auto
+flex 0 auto; // 0 1 auto
+flex: initial; // 0 1 auto
+*/
+```
+
+
+
 ![image-20210120134052836](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/css/20210120134054.png)
 
 ![image-20210120134350121](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/前端/css/20210120134351.png)

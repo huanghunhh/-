@@ -2386,7 +2386,126 @@ let modules = platformModules.concat(baseModules)
 
 ## 组件基础剖析
 
+组件是 `Vue` 的一个重要核心，我们在进行项目工程化时，会将页面的结构组件化。组件化意味着独立和共享，而两个结论并不矛盾，独立的组件开发可以让开发者专注于某个功能项的开发和扩展，而组件的设计理念又使得功能项更加具有复用性，不同的页面可以进行组件功能的共享。对于开发者而言，编写 `Vue` 组件是掌握 `Vue` 开发的核心基础，`Vue` 官网也花了大量的篇幅介绍了组件的体系和各种使用方法。这一节内容，我们会深入 `Vue` 组件内部的源码，了解**组件注册的实现思路，并结合上一节介绍的实例挂载分析组件渲染挂载的基本流程，最后我们将分析组件和组件之间是如何建立联系的**。我相信，掌握这些底层的实现思路对于我们今后在解决 `vue` 组件相关问题上会有明显的帮助。
 
+### 组件注册
+
+熟悉 `Vue` 开发流程的都知道，`Vue` 组件在使用之前需要进行注册，而注册的方式有两种，全局注册和局部注册。在进入源码分析之前，我们先回忆一下两者的用法，以便后续掌握两者的差异。
+
+```js
+/*
+熟悉 Vue 开发流程的都知道，Vue 组件在使用之前需要进行注册，而注册的方式有两种，全局注册和局部注册。在进入源码分析之前，我们先回忆一下两者的用法，以便后续掌握两者的差异。
+*/
+
+// 5.1.1 全局注册
+Vue.component('my-test', {
+  template: '<div>{{test}}</div>',
+  data() {
+    return {
+      test: 123
+    }
+  }
+})
+
+const vm = new Vue({
+  el: '#app',
+  template: '<div id="app"><my-test/></div>'
+})
+// 其中组件的全局注册需要在全局实例化 Vue 前调用 , 注册之后可以用在任何新创建的 Vue 实例中调用。
+
+// 5.1.2 局部注册
+const myTest = {
+  template: '<div>{{test}}</div>',
+  data() {
+    return {
+      test: 123
+    }
+  }
+}
+
+const vm = new Vue({
+  el: '#app',
+  component: {
+    myTest
+  }
+})
+// 当只需要在某个局部用到某个组件时，可以使用局部注册的方式进行组件注册，此时局部注册的组件只能在注册该组件内部使用。
+
+
+// 5.1.3 注册过程
+// 在简单回顾组件的两种注册方式后，我们来看注册过程到底发生了什么，我们以全局组件注册为例。它通过 Vue.component(name, {...}) 进行组件注册，Vue.component 是在 Vue 源码引入阶段定义的静态方法。
+
+// 初始化全局 api
+initAssetRegisters(Vue)
+
+var ASSET_TYPES = [
+  'component',
+  'directive',
+  'filter'
+]
+
+function initAssetRegisters(Vue) {
+  // 定义 ASSET_TYPES 中每个属性的方法，其中包括 component
+  ASSET_TYPES.forEach(function (type) {
+    // type: component directive filter
+    Vue[type] = function (id, definition) {
+      if (!definition) {
+        // 直接返回注册组件的构造函数
+        return this.options[type + 's'][id]
+      }
+
+      // ... 省略一些代码
+
+      if (type === 'component') {
+        // 验证 component 组件名字是否合法
+        validateComponentName(id)
+      }
+
+      if (type === 'component' && isPlainObject(definition)) {
+        // 组件名称设置
+        definition.name = definition.name || id
+        // Vue.extend() 创建子组件，返回子类构造器
+        definition = this.options._base.extend(definition)
+      }
+
+      // 为 Vue.options 上的 component 属性添加子类构造器
+      this.options[type + 's'][id] = definition
+      return definition
+    }
+  })
+}
+
+/*
+Vue.components 有两个参数，一个是需要注册组件的组件名，另一个是组件选项，如果第二个参数没有传递，则会直接返回注册过的组件选项。否则意味着需要对该组件进行注册，注册过程先会对组件名的合法性进行检测，要求组件名不允许出现非法的标签，包括 Vue 内置的组件名，如 slot, component 等。
+*/
+function validateComponentName(name) {
+  if (!new RegExp((`^[a-zA-Z][\\-\\.0-9_${unicodeRegExp.source}]*$`)).test(name)) {
+    // 正则判断检测是否为非法的标签
+    warn(`Invalid component name: "${name}". Component names should conform to valid custom element name in html5 specification.`)
+  }
+
+  // 不能使用 Vue 自身自定义的组件名，如 slot component 不能使用 html 的保留标签，如 h1 svg
+  if (isBuiltInTag(name) || config.isReservedTag(name)) {
+    warn(`Do not use built-in or reserved HTML elements as component id: ${name}`)
+  }
+}
+/*
+在经过组件名的合法性检测后，会调用 extend 方法为组件创建一个子类构造器，此时的 this.options._base 代表的就是 Vue 构造器。extend 方法的定义在介绍选项合并章节有重点介绍过，它会基于父类去创建一个子类，此时的父类是 Vue，并且创建过程子类会继承父类的方法，并会和父类的选项进行合并，最终返回一个子类构造器。
+
+代码处还有一个逻辑，Vue.component() 默认会把第一个参数作为组件名称，但是如果组件选项有 name 属性时，name 属性值会将组件名覆盖。
+
+总结起来，全局注册组件就是 Vue 实例化前创建一个基于 Vue 的子类构造器，并将组件的信息加载到实例 options.components 对象中。
+
+接下来自然而然会想到一个问题，局部注册和全局注册在实现上的区别体现在哪里？我们不急着分析局部组件的注册流程，先以全局注册的组件为基础，看看作为组件，它的挂载流程有什么不同。
+*/
+
+```
+
+### 组件 Vnode 创建
+
+上一节内容我们介绍了 `Vue` 如何将一个模板，通过 `render` 函数的转换，最终生成一个 `Vnode tree` 的，在不包含组件的情况下，`_render` 函数的最后一步是直接调用 `new Vnode` 去创建一个完整的 `Vnode tree`。然而有一大部分的分支我们并没有分析，那就是遇到组件占位符的场景。执行阶段如果遇到组件，处理过程要比想像中复杂得多，我们通过一张流程图展开分析。
+
+![](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E5%89%8D%E7%AB%AF/vue/5.1.png)
 
 ## 零散知识点
 

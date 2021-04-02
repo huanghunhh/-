@@ -870,3 +870,25 @@ son.sum() // 3
    ```
 
    
+
+### 为什么 JS 要有闭包
+
+[为什么 js 会有闭包](https://blog.csdn.net/weixin_36094484/article/details/81164240)
+
+[闭包 (计算机科学)](https://zh.wikipedia.org/zh-cn/%E9%97%AD%E5%8C%85_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6))
+
+#### JS 引擎
+
+[浅谈 javascript 解析引擎解析过程](https://blog.csdn.net/lq15310444798/article/details/77574320)
+
+#### JS 垃圾回收机制
+
+[js 垃圾回收机制个人总结](https://blog.csdn.net/weixin_45295262/article/details/109011987)
+
+[前端面试：谈谈 JS 垃圾回收机制](https://segmentfault.com/a/1190000018605776)
+
+#### JS 作用域链的建立
+
+[JS 中的作用域链是在什么时候建立的？](https://www.zhihu.com/question/36751764)
+
+[execution-context](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/#execution-context)
