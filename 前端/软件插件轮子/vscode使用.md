@@ -1,5 +1,9 @@
 # vscode 使用
 
+## 快捷键
+
+![image-20210421211353467](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E8%BD%AE%E5%AD%90/all/20210427152504.png)
+
 ## 创建用户代码片段
 
 [官方：emmet在github上的代码](https://github.com/emmetio/emmet)
@@ -89,3 +93,40 @@ SHIFT + ←/→ // 光标选择一个字符
 CTRL + SHIFT + ←/→ // 光标选择一个单词
 ```
 
+## 终端问题
+
+- 终端一片空白
+
+  ![image-20210418160300239](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E8%BD%AE%E5%AD%90/all/20210418161053.png)
+  
+  [打开 vs code 终端，下面一片空白 无法输入命令【轻松解决】](https://blog.csdn.net/xw_009/article/details/106079306)	
+  
+  [解决 VSCode 终端空白无法输入的问题](https://blog.csdn.net/Burning_Wzl_/article/details/103703628)
+
+- 修改默认终端
+
+  ![image-20210418161001202](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E8%BD%AE%E5%AD%90/all/20210418161054.png)
+
+  终端说明
+
+  ![image-20210418163714090](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E5%89%8D%E7%AB%AF/react/20210418163715.png)
+  
+  除了 cmd 还有 powershell（好像有高亮）
+  
+  [修改 vscode 默认的终端](https://blog.csdn.net/u013517122/article/details/82776607)
+  
+  [vscode 设置终端](https://blog.csdn.net/weixin_42369292/article/details/87093216)
+
+## git 管理
+
+![image-20210418173308002](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E8%BD%AE%E5%AD%90/all/20210418173503.png)
+
+[Visual Studio Code 使用 Git 进行版本控制](https://www.jianshu.com/p/9093e703c4b1)
+
+## js 文件中敲 jsx 代码，提示标签
+
+![image-20210419122032467](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E8%BD%AE%E5%AD%90/all/20210427152505.png)
+
+## react 中的代码片段
+
+![image-20210419135929277](https://gitee.com/twilight_h_1184651848/pic-go-img/raw/master/%E8%BD%AF%E4%BB%B6%E6%8F%92%E4%BB%B6%E8%BD%AE%E5%AD%90/all/20210427152506.png)
